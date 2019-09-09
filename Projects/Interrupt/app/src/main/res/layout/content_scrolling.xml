@@ -23,104 +23,108 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <android.support.v7.widget.CardView
-            android:foreground="?android:attr/selectableItemBackground"
-            android:clickable="true"
             android:id="@+id/card1"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="wrap_content"
             android:layout_margin="5dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
             app:cardUseCompatPadding="true">
             <RelativeLayout
                 android:background="@drawable/blackgrad"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
+                android:gravity="center"
+                android:paddingTop="10dp"
                 >
                 <ImageView
                     android:layout_width="94dp"
                     android:layout_height="94dp"
                     android:layout_marginLeft="20dp"
                     android:id="@+id/img"
-                    android:src="@drawable/bg"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ic_developer_mode_black_24dp"
                     android:padding="0dp"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
-                    android:layout_toEndOf="@+id/img"
-                    android:paddingTop="15dp"
-                    android:layout_marginLeft="10dp"
-                    android:text="Register"
+                    android:id="@+id/eventTitle"
+                    android:paddingTop="20dp"
+                    android:layout_below="@+id/img"
+                    android:layout_centerHorizontal="true"
+                    android:text="EVENT NAME"
                     android:textColor="@color/md_white_1000"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_toEndOf="@+id/img"
-                    android:gravity="center"
-                    android:text="Check your skin activities"
-                    android:layout_marginLeft="10dp"
-                    android:paddingTop="37dp"
-                    android:textColor="#fff"/>
-            </RelativeLayout>
-
-        </android.support.v7.widget.CardView>
-    </RelativeLayout>
-    <RelativeLayout
-        android:id="@+id/r2"
-        android:layout_below="@+id/r1"
-        android:clipToPadding="false"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <android.support.v7.widget.CardView
-            android:foreground="?android:attr/selectableItemBackground"
-            android:clickable="true"
-            android:id="@+id/card2"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:layout_margin="5dp"
-            app:cardUseCompatPadding="true">
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:background="@drawable/blackgrad"
-                >
-                <ImageView
-                    android:layout_width="94dp"
-                    android:layout_height="94dp"
-                    android:layout_marginLeft="20dp"
-                    android:id="@+id/img2"
-                    android:src="@drawable/bg"
-                    android:padding="0dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textStyle="bold"
-                    android:layout_toEndOf="@+id/img2"
-                    android:paddingTop="15dp"
-                    android:layout_marginLeft="10dp"
-                    android:text="Pay Toll"
-                    android:textColor="@color/md_white_1000"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_toEndOf="@+id/img2"
-                    android:gravity="center"
-                    android:text="Check your skin activities"
-                    android:layout_marginLeft="10dp"
-                    android:paddingTop="37dp"
+                    android:layout_below="@+id/eventTitle"
+                    android:layout_centerHorizontal="true"
+                    android:text="Event Description"
                     android:textColor="#fff"/>
             </RelativeLayout>
 
         </android.support.v7.widget.CardView>
     </RelativeLayout>
         <RelativeLayout
-            android:id="@+id/r3"
-            android:layout_below="@+id/r2"
+            android:id="@+id/r2"
             android:clipToPadding="false"
             android:gravity="center"
+            android:layout_below="@+id/r1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.CardView
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:id="@+id/card2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:cardUseCompatPadding="true">
+                <RelativeLayout
+                    android:background="@drawable/blackgrad"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:paddingTop="10dp"
+                    >
+                    <ImageView
+                        android:layout_width="94dp"
+                        android:layout_height="94dp"
+                        android:layout_marginLeft="20dp"
+                        android:id="@+id/img2"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/ic_developer_mode_black_24dp"
+                        android:padding="0dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:id="@+id/eventTitle2"
+                        android:paddingTop="20dp"
+                        android:layout_below="@+id/img2"
+                        android:layout_centerHorizontal="true"
+                        android:text="EVENT NAME"
+                        android:textColor="@color/md_white_1000"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/eventTitle2"
+                        android:layout_centerHorizontal="true"
+                        android:text="EVENT DESCRIPTIOM"
+                        android:textColor="#fff"/>
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/r3"
+            android:clipToPadding="false"
+            android:gravity="center"
+            android:layout_below="@+id/r2"
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -129,7 +133,7 @@
                 android:clickable="true"
                 android:id="@+id/card3"
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 app:cardUseCompatPadding="true">
                 <RelativeLayout
@@ -137,87 +141,90 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
+                    android:gravity="center"
+                    android:paddingTop="10dp"
                     >
                     <ImageView
                         android:layout_width="94dp"
                         android:layout_height="94dp"
                         android:layout_marginLeft="20dp"
                         android:id="@+id/img3"
-                        android:src="@drawable/bg"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/ic_developer_mode_black_24dp"
                         android:padding="0dp"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
-                        android:layout_toEndOf="@+id/img3"
-                        android:paddingTop="15dp"
-                        android:layout_marginLeft="10dp"
-                        android:text="Register"
+                        android:id="@+id/eventTitle3"
+                        android:paddingTop="20dp"
+                        android:layout_below="@+id/img3"
+                        android:layout_centerHorizontal="true"
+                        android:text="EVENT NAME"
                         android:textColor="@color/md_white_1000"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_toEndOf="@+id/img3"
-                        android:gravity="center"
-                        android:text="Check your skin activities"
-                        android:layout_marginLeft="10dp"
-                        android:paddingTop="37dp"
+                        android:layout_below="@+id/eventTitle3"
+                        android:layout_centerHorizontal="true"
+                        android:text="Event Description"
                         android:textColor="#fff"/>
                 </RelativeLayout>
 
             </android.support.v7.widget.CardView>
-        </RelativeLayout>
-        <RelativeLayout
-            android:id="@+id/r4"
+        </RelativeLayout>  <RelativeLayout
+        android:id="@+id/r4"
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:layout_below="@+id/r3"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.CardView
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:id="@+id/card4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/r3"
-            android:clipToPadding="false"
-            android:gravity="center"
-            android:orientation="horizontal">
-            <android.support.v7.widget.CardView
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                android:id="@+id/card4"
+            android:layout_margin="5dp"
+            app:cardUseCompatPadding="true">
+            <RelativeLayout
+                android:background="@drawable/blackgrad"
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:layout_margin="5dp"
-                app:cardUseCompatPadding="true">
-                <RelativeLayout
-                    android:background="@drawable/blackgrad"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    >
-                    <ImageView
-                        android:layout_width="94dp"
-                        android:layout_height="94dp"
-                        android:layout_marginLeft="20dp"
-                        android:id="@+id/img4"
-                        android:src="@drawable/bg"
-                        android:padding="0dp"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textStyle="bold"
-                        android:layout_toEndOf="@+id/img4"
-                        android:paddingTop="15dp"
-                        android:layout_marginLeft="10dp"
-                        android:text="Register"
-                        android:textColor="@color/md_white_1000"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_toEndOf="@+id/img4"
-                        android:gravity="center"
-                        android:text="Check your skin activities"
-                        android:layout_marginLeft="10dp"
-                        android:paddingTop="37dp"
-                        android:textColor="#fff"/>
-                </RelativeLayout>
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                >
+                <ImageView
+                    android:layout_width="94dp"
+                    android:layout_height="94dp"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/img4"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ic_developer_mode_black_24dp"
+                    android:padding="0dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:id="@+id/eventTitle4"
+                    android:paddingTop="20dp"
+                    android:layout_below="@+id/img4"
+                    android:layout_centerHorizontal="true"
+                    android:text="EVENT NAME"
+                    android:textColor="@color/md_white_1000"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/eventTitle4"
+                    android:layout_centerHorizontal="true"
+                    android:text="Event Description"
+                    android:textColor="#fff"/>
+            </RelativeLayout>
 
-            </android.support.v7.widget.CardView>
-        </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
         <RelativeLayout
             android:id="@+id/r5"
             android:layout_width="match_parent"
@@ -226,66 +233,12 @@
             android:clipToPadding="false"
             android:gravity="center"
             android:orientation="horizontal">
-            <android.support.v7.widget.CardView
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                android:id="@+id/card5"
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:layout_margin="5dp"
-                app:cardUseCompatPadding="true">
-                <RelativeLayout
-                    android:background="@drawable/blackgrad"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    >
-                    <ImageView
-                        android:layout_width="94dp"
-                        android:layout_height="94dp"
-                        android:layout_marginLeft="20dp"
-                        android:id="@+id/img5"
-                        android:src="@drawable/bg"
-                        android:padding="0dp"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textStyle="bold"
-                        android:layout_toEndOf="@+id/img5"
-                        android:paddingTop="15dp"
-                        android:layout_marginLeft="10dp"
-                        android:text="Register"
-                        android:textColor="@color/md_white_1000"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_toEndOf="@+id/img5"
-                        android:gravity="center"
-                        android:text="Check your skin activities"
-                        android:layout_marginLeft="10dp"
-                        android:paddingTop="37dp"
-                        android:textColor="#fff"/>
-                </RelativeLayout>
-
-            </android.support.v7.widget.CardView>
-        </RelativeLayout>
-
-
-    <RelativeLayout
-        android:id="@+id/r6"
-        android:clipToPadding="false"
-        android:gravity="center"
-
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/r5">
         <android.support.v7.widget.CardView
             android:foreground="?android:attr/selectableItemBackground"
             android:clickable="true"
-            android:id="@+id/card6"
+            android:id="@+id/card5"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="wrap_content"
             android:layout_margin="5dp"
             app:cardUseCompatPadding="true">
             <RelativeLayout
@@ -293,31 +246,137 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                >
+                <ImageView
+                    android:layout_width="94dp"
+                    android:layout_height="94dp"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/img5"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ic_developer_mode_black_24dp"
+                    android:padding="0dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:id="@+id/eventTitle5"
+                    android:paddingTop="20dp"
+                    android:layout_below="@+id/img5"
+                    android:layout_centerHorizontal="true"
+                    android:text="EVENT NAME"
+                    android:textColor="@color/md_white_1000"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/eventTitle5"
+                    android:layout_centerHorizontal="true"
+                    android:text="Event Description"
+                    android:textColor="#fff"/>
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>  <RelativeLayout
+        android:id="@+id/r6"
+        android:layout_below="@+id/r5"
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.CardView
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:id="@+id/card6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            app:cardUseCompatPadding="true">
+            <RelativeLayout
+                android:background="@drawable/blackgrad"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:paddingTop="10dp"
                 >
                 <ImageView
                     android:layout_width="94dp"
                     android:layout_height="94dp"
                     android:layout_marginLeft="20dp"
                     android:id="@+id/img6"
-                    android:src="@drawable/bg"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ic_developer_mode_black_24dp"
                     android:padding="0dp"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
-                    android:layout_toEndOf="@+id/img6"
-                    android:paddingTop="15dp"
-                    android:layout_marginLeft="10dp"
-                    android:text="Register"
+                    android:id="@+id/eventTitle6"
+                    android:paddingTop="20dp"
+                    android:layout_below="@+id/img6"
+                    android:layout_centerHorizontal="true"
+                    android:text="EVENT NAME"
                     android:textColor="@color/md_white_1000"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_toEndOf="@+id/img6"
-                    android:gravity="center"
-                    android:text="Check your skin activities"
-                    android:layout_marginLeft="10dp"
-                    android:paddingTop="37dp"
+                    android:layout_below="@+id/eventTitle6"
+                    android:layout_centerHorizontal="true"
+                    android:text="Event Description"
+                    android:textColor="#fff"/>
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>  <RelativeLayout
+        android:id="@+id/r7"
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:layout_below="@+id/r6"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.CardView
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:id="@+id/card7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            app:cardUseCompatPadding="true">
+            <RelativeLayout
+                android:background="@drawable/blackgrad"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                >
+                <ImageView
+                    android:layout_width="94dp"
+                    android:layout_height="94dp"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/img7"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ic_developer_mode_black_24dp"
+                    android:padding="0dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:id="@+id/eventTitle7"
+                    android:paddingTop="20dp"
+                    android:layout_below="@+id/img7"
+                    android:layout_centerHorizontal="true"
+                    android:text="EVENT NAME"
+                    android:textColor="@color/md_white_1000"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/eventTitle7"
+                    android:layout_centerHorizontal="true"
+                    android:text="Event Description"
                     android:textColor="#fff"/>
             </RelativeLayout>
 

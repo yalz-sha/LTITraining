@@ -18,10 +18,7 @@ public class ScrollingActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scrolling);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-        scrollImg=(ImageView) findViewById(R.id.headimg);
-        Glide.with(this).load(R.drawable.pacman).into(scrollImg);
+
 
 
     }
