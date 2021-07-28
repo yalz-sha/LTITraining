@@ -1,0 +1,15 @@
+E:\LTI\.Net Training\MiniProject\bin\Debug\netcoreapp3.1\MiniProject.exe
+E:\LTI\.Net Training\MiniProject\bin\Debug\netcoreapp3.1\MiniProject.deps.json
+E:\LTI\.Net Training\MiniProject\bin\Debug\netcoreapp3.1\MiniProject.runtimeconfig.json
+E:\LTI\.Net Training\MiniProject\bin\Debug\netcoreapp3.1\MiniProject.runtimeconfig.dev.json
+E:\LTI\.Net Training\MiniProject\bin\Debug\netcoreapp3.1\MiniProject.dll
+E:\LTI\.Net Training\MiniProject\bin\Debug\netcoreapp3.1\MiniProject.pdb
+E:\LTI\.Net Training\MiniProject\bin\Debug\netcoreapp3.1\LumenWorks.Framework.IO.dll
+E:\LTI\.Net Training\MiniProject\obj\Debug\netcoreapp3.1\MiniProject.csproj.AssemblyReference.cache
+E:\LTI\.Net Training\MiniProject\obj\Debug\netcoreapp3.1\MiniProject.AssemblyInfoInputs.cache
+E:\LTI\.Net Training\MiniProject\obj\Debug\netcoreapp3.1\MiniProject.AssemblyInfo.cs
+E:\LTI\.Net Training\MiniProject\obj\Debug\netcoreapp3.1\MiniProject.csproj.CoreCompileInputs.cache
+E:\LTI\.Net Training\MiniProject\obj\Debug\netcoreapp3.1\MiniProject.csproj.CopyComplete
+E:\LTI\.Net Training\MiniProject\obj\Debug\netcoreapp3.1\MiniProject.dll
+E:\LTI\.Net Training\MiniProject\obj\Debug\netcoreapp3.1\MiniProject.pdb
+E:\LTI\.Net Training\MiniProject\obj\Debug\netcoreapp3.1\MiniProject.genruntimeconfig.cache
